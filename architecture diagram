@@ -1,0 +1,31 @@
+    +------------------------+
+          |      Arduino IDE       |
+          |  Touch Sensor Program  |
+          +-----------+------------+
+                      |
+               Upload via USB
+                      |
+                      ▼
+          +------------------------+
+          |      Arduino UNO       |
+          |    (ATmega328P MCU)    |
+          |                        |
+          | D2  <------ OUT        |
+          | 5V  ------> VCC        |
+          | GND ------> GND        |
+          |                        |
+          | D9 (PWM) ---> LED (+)  |
+          | GND --------> LED (-)  |
+          +-----------+------------+
+                      |
+                      ▼
+      TTP223 Capacitive Touch Sensor
+              Controls LED Brightness
+Connections
+TTP223 Touch Sensor	Arduino Uno
+VCC	5V
+GND	GND
+OUT	Digital Pin 2
+LED	Arduino Uno
+Anode (+)	Pin 9 (PWM) through 220 Ω resistor
+Cathode (-)	GND
